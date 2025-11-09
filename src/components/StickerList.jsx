@@ -3,13 +3,12 @@ import { Sticker } from "./Sticker";
 
 const StickerGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 стікери в ряд */
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 20px;
   justify-items: center;
   align-items: center;
 
-  /* Робимо тільки два ряди */
   max-width: 800px;
   margin: 0 auto;
   height: auto;

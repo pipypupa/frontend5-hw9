@@ -1,16 +1,21 @@
+import React, { Component } from "react";
 import styled from "styled-components";
 
 const ChoiceBox = styled.div`
   text-align: center;
-  margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 1.4rem;
-  color: #555;
+  color: #444;
 `;
 
-export const Choice = ({ selected }) => {
-  return (
-    <ChoiceBox>
-      {selected ? `Ви обрали: ${selected}` : "Оберіть стикер 👇"}
-    </ChoiceBox>
-  );
-};
+export class Choice extends Component {
+  render() {
+    const { selected } = this.props;
+
+    return (
+      <ChoiceBox>
+        {selected ? `Ви обрали: ${selected}` : "Оберіть стикер 👇"}
+      </ChoiceBox>
+    );
+  }
+}
